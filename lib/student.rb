@@ -14,7 +14,6 @@ class Student
   def self.create_from_collection(students_array)
     students_array.each do |hash|
       Student.new(hash)
-      # Student.new(Scraper.scrape_profile_page("./fixtures/student-site/students/#{hash[:name].downcase.split.join("-")}.html"))
     end
   end
 
